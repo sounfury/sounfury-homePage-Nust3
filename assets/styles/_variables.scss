@@ -1,0 +1,15 @@
+// 亮色主题
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f80000;
+    --text-color: #333333;
+}
+
+// 暗色主题
+.dark {
+    --primary-color: #1d4ed8;
+    --secondary-color: #4b5563;
+    --background-color: #1a1a1a;
+    --text-color: #f4f4f4;
+}
