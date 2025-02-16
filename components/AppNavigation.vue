@@ -1,6 +1,6 @@
 <template>
     <div id="navigation">
-        <h1>网站列表</h1>
+        <h2>网站列表</h2>
         <div class="card-container">
             <navigationCard v-for="site in sites" :key="site.title" :title="site.title" :text="site.text"
                 :link="site.link" :icon="site.icon" :enabled="site.enabled" @click="handleSiteClick(site)" />
@@ -36,7 +36,14 @@ const sites = ref([
         text: '存储和分享文件',
         link: 'https://alist.sounfury.top',
         icon: 'ri-cloud-line',
-        enabled: true, // 功能未开启
+        enabled: true, 
+    },
+    {
+        title: 'ai',
+        text: 'ai工具',
+        link: 'https://ai.sounfury.top',
+        icon: 'ri-robot-2-line',
+        enabled: true,
     },
     {
         title: '书库',
@@ -97,7 +104,7 @@ onMounted(() => {
     max-width: 1200px;
     margin: 0 auto;
 
-    h1 {
+    h2 {
         text-align: center;
         margin-bottom: 2rem;
         color: var(--title-color);
