@@ -57,4 +57,4 @@ jobs:
             echo '检查部署目录文件:' && \
             ls -l $DEPLOY_PATH && \
             test -f $DEPLOY_PATH/index.html || (echo '未找到index.html文件！' && exit 1) && \
-            echo '部署验证完成'"
+            echo '部署验证'"
