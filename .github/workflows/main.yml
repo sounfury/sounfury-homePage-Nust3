@@ -20,7 +20,7 @@ jobs:
       run: npm install
 
     - name: 构建项目
-      run: nuxt generate # 使用生产模式进行构建
+      run: npm run generate
 
     - name: 检查环境变量
       run: |
